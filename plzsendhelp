@@ -1,0 +1,37 @@
+
+
+
+
+
+
+
+cv.waitkey(0)
+cv.destroyallwindows()
+import tkinter as tk
+import tkinter.messagebox as msg
+pen = tk.Tk()
+pen.title("ımtrying")
+pen.geometry("500x500")
+öneri = tk.Label(text="insert meme here ")
+öneri.pack()
+
+ent = tk.Entry()
+ent.pack()
+
+lab = tk.Label()
+lab.pack()
+
+def tamam():
+    f = ent.get()
+    f = f+".png"
+    try:
+        resim = https://memegenerator.net/instance/61353994/sad-face-guy-im-trying-my-best(file=f)
+    except:
+        msg.showinfo("where is the pic")
+    else:
+        lab["image"] = resim
+
+but = tk.Button(text="Tamam", command=tamam)
+but.pack()
+
+tk.mainloop()
